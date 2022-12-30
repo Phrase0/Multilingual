@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "save"; ObjectID = "FJK-uQ-Qov"; */
+"FJK-uQ-Qov.normalTitle" = "speichern";
+
+/* Class = "UILabel"; text = "Hello"; ObjectID = "Lg7-MX-hFT"; */
+"Lg7-MX-hFT.text" = "Hallo";
+
+/* Class = "UITextField"; placeholder = "World"; ObjectID = "rhr-VK-0Mw"; */
+"rhr-VK-0Mw.placeholder" = "Welt";

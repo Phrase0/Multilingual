@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg7-MX-hFT">
+                                <rect key="frame" x="65" y="50" width="245" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="1pi-p7-p6e"/>
+                                    <constraint firstAttribute="height" constant="112" id="zCN-Wd-s23"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="100"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="World" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rhr-VK-0Mw">
+                                <rect key="frame" x="69" y="172" width="237" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0Gt-IE-Jpx"/>
+                                    <constraint firstAttribute="width" constant="237" id="JTv-o5-1Ce"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJK-uQ-Qov">
+                                <rect key="frame" x="93" y="247" width="189" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="5jR-IH-nNA"/>
+                                    <constraint firstAttribute="height" constant="66" id="ecA-OQ-mkR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="save">
+                                    <color key="titleColor" red="0.98135891769318673" green="1" blue="0.69781242748680694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqc-PG-ajF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flag.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ap-j4-her">
+                                <rect key="frame" x="67.5" y="389" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="nRo-g3-xNU"/>
+                                    <constraint firstAttribute="width" constant="240" id="zJh-Uc-OgZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rhr-VK-0Mw" firstAttribute="top" secondItem="Lg7-MX-hFT" secondAttribute="bottom" constant="10" id="KrE-tI-dNu"/>
+                            <constraint firstItem="5ap-j4-her" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TAt-oT-CwR"/>
+                            <constraint firstItem="rhr-VK-0Mw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WK5-BF-Ixg"/>
+                            <constraint firstItem="Lg7-MX-hFT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="XLX-j7-vS8"/>
+                            <constraint firstItem="FJK-uQ-Qov" firstAttribute="top" secondItem="rhr-VK-0Mw" secondAttribute="bottom" constant="15" id="e9C-Um-dOH"/>
+                            <constraint firstItem="Lg7-MX-hFT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gxZ-K6-Ura"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5ap-j4-her" secondAttribute="bottom" constant="150" id="jVY-nB-CMe"/>
+                            <constraint firstItem="FJK-uQ-Qov" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nza-Q3-Odt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Flag.png" width="1280" height="674"/>
+    </resources>
+</document>
